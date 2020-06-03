@@ -15,3 +15,6 @@ deploy:
         setValueTemplates:
           istioDomain: "{{.ISTIO_DOMAIN}}"
           productName: "{{.PRODUCT_NAME}}"
+        setValues:
+          hpa.enabled: true
+
